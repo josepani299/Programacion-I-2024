@@ -16,6 +16,8 @@ Grado_Polinomio=input("Ingrese el grado del polinomio  ")
 
 print("El grado del polinomio es:", Grado_Polinomio)
 
+print("El grado de un polinomio es el exponente mas grande que se encuentra en el polinomio")
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
