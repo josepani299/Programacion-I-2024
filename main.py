@@ -9,6 +9,13 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 print("luciliu")
+
+#Tenemos que hacer que el usuario ponga el grado del polinomio
+
+Grado_Polinomio=input("Ingrese el grado del polinomio  ")
+
+print("El grado del polinomio es:", Grado_Polinomio)
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
