@@ -23,4 +23,5 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 print("2024")
+print("Matematica")
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
