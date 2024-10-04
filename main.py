@@ -44,7 +44,7 @@ numerodiv = len(divisiores)
 
 for i in range(numerodiv):
     if int(polinomio3[-1]) % (i+1) == 0:
-        divisiores[i] = i
+        divisiores[i] = (i+1)
 
 for i in range(numerodiv):
     print(divisiores[i])
