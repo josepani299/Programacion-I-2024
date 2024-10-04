@@ -66,3 +66,5 @@ for i in range(4):
 #   pol[i] = float(input(f"ingrese el valor del exponente nº {expo} "))
 #  expo = expo-1
 # Hacer un segun para el panel principal
+
+print("casi se me muere el codigo jeje")
