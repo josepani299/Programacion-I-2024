@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is a sample Python script.
 
 def grado1():
@@ -10,6 +11,23 @@ def grado1():
 # Raices del polinomio de grado 2;
 
 
+=======
+print("Luciliu branchera")
+
+
+# Raices de un polinomio de grado 1#
+
+def grado1():
+    pendiente = float(input("Ingrese la pendiente de la recta: "))
+    ordenada = float(input("Ingrese la ordenada de la recta:  "))
+    raiz = (-pendiente/ordenada)
+    print(f"la rairz de la recta {pendiente}X{ordenada} es: {raiz}")
+
+
+# Raices del polinomio de grado 2;
+
+
+>>>>>>> Lucila
 def grado2():
     import math
     a = float(input("Ingrese el coeficiente principal"))
@@ -67,4 +85,8 @@ for i in range(4):
 #  expo = expo-1
 # Hacer un segun para el panel principal
 
+<<<<<<< HEAD
 print("casi se me muere el codigo jeje")
+=======
+print("ridicula")
+>>>>>>> Lucila
