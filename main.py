@@ -67,4 +67,4 @@ for i in range(4):
 #  expo = expo-1
 # Hacer un segun para el panel principal
 
-print("casi se me muere el codigo jeje")
+print("casi se me muere el codigo jeje bromis")
