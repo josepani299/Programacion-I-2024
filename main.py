@@ -31,25 +31,30 @@ def grado2():
 polinomio3 = [0]*4
 grados = len(polinomio3)
 exponente = len(polinomio3)
+
 for i in range(4):
     polinomio3[i] = float(input(f"Ingrese el valor delante de X^{exponente-1}: "))
     exponente -= 1
 
+# Buscando los divisores del coeficiente principal y el termino independiente. Mostrandolos
 
-# Buscando los divisiores de un numero
-
-divisiores = [0] * int(polinomio3[-1])
-numerodiv = len(divisiores)
-
-for i in range(numerodiv):
+divisiores_ti = []
+for i in range(int(polinomio3[-1])):
     if int(polinomio3[-1]) % (i+1) == 0:
-        divisiores[i] = (i+1)
+        divisiores_ti.append(i+1)
 
-for i in range(numerodiv):
-    print(divisiores[i])
+divisiores_cp = []
+
+for i in range(int(polinomio3[0])):
+    if int(polinomio3[0] % (i+1) == 0):
+        divisiores_cp.append(i+1)
+
+print(divisiores_cp)
+print(divisiores_ti)
 
 
 # Intendo generar el acumulador para establecer si es  una raiz o no
+
 acumulador = 0
 for i in range(4):
     print(f"{polinomio3[i]}*({polinomio3[1]})^{grados-1}")
@@ -57,14 +62,5 @@ for i in range(4):
     grados -= 1
     print(acumulador)
 
-# probando con grado 3
-# i = int(0)
-# grado = int(input("Ingrese el grado del polinomio: "))
-# expo = grado
-# pol = [0]*(grado+1)
-# for i in range(grado+1):
-#   pol[i] = float(input(f"ingrese el valor del exponente nº {expo} "))
-#  expo = expo-1
-# Hacer un segun para el panel principal
 
-print("casi se me muere el codigo jeje bromis")
+
