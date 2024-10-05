@@ -22,8 +22,6 @@ def grado2():
         x2 = float((-b - dis) / 2 * a)
         print(f"Las raices de la ecuacion son: {x1} y {x2} ")
 
-
-
 # Intentando la de grado 3:
 
 # Ingresando valores de los coeficientes de polinomio de grado 3 guardandolo en un vector
