@@ -36,7 +36,9 @@ for i in range(4):
     polinomio3[i] = float(input(f"Ingrese el valor delante de X^{exponente-1}: "))
     exponente -= 1
 
-# Buscando los divisores del coeficiente principal y el termino independiente. Mostrandolos
+# Buscando los divisores del coeficiente principal y el termino independiente.
+#
+# Posibles raices enteras positivas
 
 divisiores_ti = []
 for i in range(int(polinomio3[-1])):
@@ -51,6 +53,27 @@ for i in range(int(polinomio3[0])):
 
 print(divisiores_cp)
 print(divisiores_ti)
+
+# Posibles raices enteras negativas
+
+divisores_cpn = []
+
+for i in range(int(len(divisiores_cp))):
+    divisores_cpn.append(divisiores_cp[i]*(-1))
+
+divisores_tin = []
+
+for i in range(int(len(divisiores_ti))):
+    divisores_tin.append(divisiores_ti[i]*(-1))
+
+
+print(divisores_cpn)
+print(divisores_tin)
+
+# Posibles raices racionales de estilo Ti/cp
+
+
+
 
 
 # Intendo generar el acumulador para establecer si es  una raiz o no
