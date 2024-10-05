@@ -1,4 +1,3 @@
-# This is a sample Python script.
 
 def grado1():
     pendiente = float(input("Ingrese la pendiente de la recta: "))
@@ -66,15 +65,22 @@ divisores_tin = []
 for i in range(int(len(divisiores_ti))):
     divisores_tin.append(divisiores_ti[i]*(-1))
 
-
 print(divisores_cpn)
 print(divisores_tin)
 
+# Unificando los divisores en un solo vector.
+
+divisiores_Enteros = divisiores_ti + divisiores_cp + divisores_tin + divisores_cpn
+
+print(divisiores_Enteros)
+
+# Quitando los elementos repetidos
+
+divisiores_Enteros_Unicos = list(set(divisiores_Enteros))
+
+print(divisiores_Enteros_Unicos)
+
 # Posibles raices racionales de estilo Ti/cp
-
-
-
-
 
 # Intendo generar el acumulador para establecer si es  una raiz o no
 
@@ -84,6 +90,3 @@ for i in range(4):
     acumulador = acumulador + polinomio3[i]*(polinomio3[-1])**(grados-1)
     grados -= 1
     print(acumulador)
-
-
-
