@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-# This is a sample Python script.
-=======
->>>>>>> Jose
 
 def grado1():
     pendiente = float(input("Ingrese la pendiente de la recta: "))
@@ -25,8 +21,7 @@ def grado2():
         x1 = float((-b+dis)/2*a)
         x2 = float((-b - dis) / 2 * a)
         print(f"Las raices de la ecuacion son: {x1} y {x2} ")
-<<<<<<< HEAD
-=======
+
 
 
 # Intentando la de grado 3:
@@ -96,4 +91,3 @@ for i in range(4):
     acumulador = acumulador + polinomio3[i]*(polinomio3[-1])**(grados-1)
     grados -= 1
     print(acumulador)
->>>>>>> Jose
