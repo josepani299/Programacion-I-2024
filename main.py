@@ -49,9 +49,6 @@ for i in range(int(polinomio3[0])):
     if int(polinomio3[0] % (i+1) == 0):
         divisiores_cp.append(i+1)
 
-print(divisiores_cp)
-print(divisiores_ti)
-
 # Posibles raices enteras negativas
 
 divisores_cpn = []
@@ -64,22 +61,64 @@ divisores_tin = []
 for i in range(int(len(divisiores_ti))):
     divisores_tin.append(divisiores_ti[i]*(-1))
 
-print(divisores_cpn)
-print(divisores_tin)
 
 # Unificando los divisores en un solo vector.
 
 divisiores_Enteros = divisiores_ti + divisiores_cp + divisores_tin + divisores_cpn
 
-print(divisiores_Enteros)
-
 # Quitando los elementos repetidos
 
 divisiores_Enteros_Unicos = list(set(divisiores_Enteros))
 
+
+print("Divisores enteros del Coeficiente Principal y Termino independiente : ")
 print(divisiores_Enteros_Unicos)
 
+divisores_frac_ti_cp = []
 # Posibles raices racionales de estilo Ti/cp
+i = 0
+for i in range(len(divisiores_ti)):
+    j = 0
+    for j in range(len(divisiores_cp)):
+
+        if divisiores_ti[i]%divisiores_ti[j] != 0 :
+                divisores_frac_ti_cp.append(divisiores_ti[i]/divisiores_cp[j])
+
+divisores_frac_ti_cp= list(set(divisores_frac_ti_cp))
+divisores_frac_ti_cp_neg = []
+
+for i in range(len(divisores_frac_ti_cp)):
+    divisores_frac_ti_cp_neg.append(divisores_frac_ti_cp[i]*(-1))
+
+divisores_frac_ti_cp_Todos = divisores_frac_ti_cp + divisores_frac_ti_cp_neg
+
+print("Divisores del estilo ti/cp ")
+print(divisores_frac_ti_cp_Todos)
+
+
+
+# # Posibles raices racionales del estilo cp/ti
+#
+# divisores_frac_cp = []
+#
+# for i in range(len(divisiores_cp)):
+#     j = 0
+#     for j in range(len(divisiores_ti)):
+#         if divisiores_cp[i]%divisiores_ti[j] != 0:
+#             divisores_frac_cp.append( divisiores_cp[i]/divisiores_ti[j])
+# # Quitando los elemento repetidos de las soluc
+#
+# divisores_frac_cp = list(set(divisores_frac_cp))
+# divisores_frac_cp_n = []
+#
+# for i in range(len(divisores_frac_cp)):
+#     divisores_frac_cp_n.append(divisores_frac_cp[i] * (-1))
+#
+#
+# divisores_frac_cp_todas = divisores_frac_cp + divisores_frac_cp_n
+# print("Posibles soluciones fraccionarias de la forma cp/ti : ")
+# print(divisores_frac_cp_todas)
+#
 
 # Intendo generar el acumulador para establecer si es  una raiz o no
 
